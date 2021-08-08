@@ -35,7 +35,7 @@ async function main() {
     embeddedPages = [null, ...embeddedPages];
   }
 
-  const margin = 72 / 4;
+  const margin = 72 / 3;
   for (const chunks of inChunks(embeddedPages, 2)) {
     const outputPage = outputPdfDoc.addPage(PageSizes.A4);
     for (let i = 0; i < chunks.length; i++) {
