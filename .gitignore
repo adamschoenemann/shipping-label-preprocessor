@@ -1,2 +1,5 @@
 node_modules
 *.pdf
+.vscode
+.bandcamp-oauth-token.json
+bandcamp-credentials.json
