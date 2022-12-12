@@ -3,3 +3,4 @@ node_modules
 .vscode
 .bandcamp-oauth-token.json
 bandcamp-credentials.json
+result.pdf
