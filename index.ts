@@ -71,7 +71,7 @@ async function to102x162mm() {
     if (inputPage === null) {
       continue;
     }
-    const outputPage = outputPdfDoc.addPage([103, 164]);
+    const outputPage = outputPdfDoc.addPage([4.094 * 72, 6.457 * 72]);
     const page = await pdfjsDoc.getPage(i);
     const pageTextItems = await page.getTextContent();
     // console.log("pageTextItems", pageTextItems);
@@ -118,10 +118,10 @@ async function to102x162mm() {
           .map((x) => x.join("\t\t"))
           .join("\n"),
         {
-          size: 3,
-          lineHeight: 3,
-          x: outputPage.getWidth() - 5,
-          y: outputPage.getHeight() - 5,
+          size: 8,
+          lineHeight: 8,
+          x: outputPage.getWidth() - 10,
+          y: outputPage.getHeight() - 10,
           rotate: degrees(270),
         },
       );
